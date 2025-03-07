@@ -6,6 +6,10 @@ on:
       - main # Change to your default branch if needed
   workflow_dispatch: # Allows manual triggering
 
+permissions:
+  contents: write # This is needed to create releases and upload assets
+  id-token: write
+
 jobs:
   build:
     name: Build and Release APK
@@ -37,7 +41,7 @@ jobs:
         with:
           files: android/app/build/outputs/apk/debug/app-debug.apk
           tag_name: v1.0.${{ github.run_number }}
-          name: "Release v1.0.${{ github.run_number }}"
+          release_name: "Release v1.0.${{ github.run_number }}"
           body: "Automated release of APK"
           draft: false
           prerelease: true
