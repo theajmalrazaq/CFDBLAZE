@@ -1,3 +1,11 @@
+# Ignore everything in the build directory
 /build/*
+
+# But do not ignore .npmkeep in the build directory
 !/build/.npmkeep
+
+# Do not ignore app-debug.apk specifically
+!/build/outputs/
+!/build/outputs/apk/
+!/build/outputs/apk/debug/
 !/build/outputs/apk/debug/app-debug.apk
