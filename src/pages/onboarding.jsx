@@ -6,8 +6,8 @@ import { StatusBar } from '@capacitor/status-bar';
 function Onboarding() {
     const [page, setPage] = useState(0);
     const [student, setStudent] = useState('regular');
-    // Add more state variables as needed for additional pages
     const [semester, setSemester] = useState(1);
+    const [Timetabledata, setTimetableData] = useState([]);
 
     useEffect(() => {
         const initialize = async () => {
@@ -35,6 +35,16 @@ function Onboarding() {
             setPage(page - 1);
         }
     };
+
+    useEffect(() => {
+        const data = async () => {
+            fetch('/data.json')
+                .then((response) => response.json())
+                .then((data) => setTimetableData(data));
+
+        };
+        data();
+    }, []);
 
     return (
         <div>
@@ -135,18 +145,27 @@ function Onboarding() {
                             Which semester are you in?
                         </p>
                         <div className="grid grid-cols-3 gap-3 text-white">
-                            {[1, 2, 3, 4, 5, 6, 7, 8].map((sem) => (
-                                <div
-                                    key={sem}
-                                    className={semester === sem ?
-                                        "bg-gradient-to-r from-lime-400 to-lime-500 w-[80px] h-[80px] font-bold product-sans flex justify-center items-center rounded-xl hover:cursor-pointer hover:to-lime-600 ease-in duration-300 text-black" :
-                                        "bg-[#212121] w-[80px] h-[80px] flex justify-center items-center rounded-xl hover:cursor-pointer"
-                                    }
-                                    onClick={() => changeSemester(sem)}
-                                >
-                                    {sem}
-                                </div>
-                            ))}
+                            {
+                                Timetabledata.semesters.map((semester, index) => (
+                                    <label
+                                        key={index}
+                                        id={semester}
+                                        className={
+                                            "bg-gradient-to-r from-lime-400 to-lime-500 w-[120px] p-3 font-bold product-sans flex justify-center items-center rounded-xl hover:cursor-pointer hover:to-lime-600 ease-in duration-300 text-black"
+                                        }
+                                    >
+                                        <input
+                                            type="radio"
+                                            name="semester"
+                                            value={semester}
+
+                                            onChange={() => changeSemester(semester)}
+                                            className="hidden"
+                                        />
+                                        {semester}
+                                    </label>
+                                ))
+                            }
                         </div>
                     </div>
                     <div className="flex flex-col items-center gap-3 bottom-0">

@@ -1,0 +1,440 @@
+{
+  "Program": "BCS",
+  "semesters": ["1", "2", "3", "4", "5", "6", "7", "8"],
+  "semesterData": {
+    "2": {
+      "Sections": {
+        "2A": {
+          "Monday": {
+            "08:45-09:45": {
+              "subject": "Data Structures",
+              "instructor": "Ahsan Raza",
+              "room": "FSM R-9"
+            },
+            "09:50-10:50": {
+              "subject": "Discrete Structures",
+              "instructor": "Fahad Khan",
+              "room": "R-8"
+            },
+            "10:55-11:55": {
+              "subject": "Communication Skills",
+              "instructor": "Farah Naz",
+              "room": "FSM R-10"
+            },
+            "12:00-13:00": {
+              "subject": "Data Structures-Lab",
+              "instructor": "Rabia Khalid",
+              "room": "Lab 4",
+              "type": "Lab"
+            },
+            "01:30-02:30": {
+              "subject": "Data Structures-Lab",
+              "instructor": "Rabia Khalid",
+              "room": "Lab 4",
+              "type": "Lab"
+            }
+          },
+          "Tuesday": {
+            "09:00-10:00": {
+              "subject": "Probability & Statistics",
+              "instructor": "Shahid Hassan",
+              "room": "R-12"
+            },
+            "10:55-11:55": {
+              "subject": "Computer Architecture",
+              "instructor": "Ayesha Tariq",
+              "room": "FSM R-11"
+            },
+            "12:00-13:00": {
+              "subject": "Discrete Structures",
+              "instructor": "Fahad Khan",
+              "room": "R-8"
+            },
+            "01:30-03:00": {
+              "subject": "Computer Architecture-Lab",
+              "instructor": "Bilal Kamran",
+              "room": "Lab 5",
+              "type": "Lab"
+            }
+          },
+          "Wednesday": {
+            "08:45-09:45": {
+              "subject": "Data Structures",
+              "instructor": "Ahsan Raza",
+              "room": "FSM R-9"
+            },
+            "09:50-10:50": {
+              "subject": "Probability & Statistics",
+              "instructor": "Shahid Hassan",
+              "room": "R-12"
+            },
+            "10:55-11:55": {
+              "subject": "Communication Skills-Lab",
+              "instructor": "Farah Naz",
+              "room": "CAL Lab",
+              "type": "Lab"
+            }
+          },
+          "Thursday": {
+            "09:50-10:50": {
+              "subject": "Computer Architecture",
+              "instructor": "Ayesha Tariq",
+              "room": "FSM R-11"
+            },
+            "10:55-11:55": {
+              "subject": "Communication Skills",
+              "instructor": "Farah Naz",
+              "room": "FSM R-10"
+            },
+            "12:00-13:00": {
+              "subject": "Data Structures",
+              "instructor": "Ahsan Raza",
+              "room": "FSM R-9"
+            }
+          },
+          "Friday": {
+            "08:45-09:45": {
+              "subject": "Discrete Structures",
+              "instructor": "Fahad Khan",
+              "room": "R-8"
+            },
+            "09:50-10:50": {
+              "subject": "Computer Architecture",
+              "instructor": "Ayesha Tariq",
+              "room": "FSM R-11"
+            },
+            "10:55-11:55": {
+              "subject": "Probability & Statistics",
+              "instructor": "Shahid Hassan",
+              "room": "R-12"
+            }
+          }
+        },
+        "2B": {
+          "Monday": {
+            "08:45-09:45": {
+              "subject": "Data Structures",
+              "instructor": "Sana Ahmed",
+              "room": "FSM R-12"
+            },
+            "09:50-10:50": {
+              "subject": "Discrete Structures",
+              "instructor": "Arslan Ali",
+              "room": "R-14"
+            },
+            "10:55-11:55": {
+              "subject": "Communication Skills",
+              "instructor": "Hina Shahid",
+              "room": "FSM R-15"
+            },
+            "12:00-13:00": {
+              "subject": "Data Structures-Lab",
+              "instructor": "Saima Khan",
+              "room": "Lab 6",
+              "type": "Lab"
+            }
+          },
+          "Tuesday": {
+            "08:45-09:45": {
+              "subject": "Probability & Statistics",
+              "instructor": "Imran Malik",
+              "room": "R-13"
+            },
+            "09:50-10:50": {
+              "subject": "Computer Architecture",
+              "instructor": "Zubair Ahmed",
+              "room": "FSM R-14"
+            },
+            "01:30-03:00": {
+              "subject": "Computer Architecture-Lab",
+              "instructor": "Usman Yousaf",
+              "room": "Lab 3",
+              "type": "Lab"
+            }
+          },
+          "Wednesday": {
+            "09:50-10:50": {
+              "subject": "Data Structures",
+              "instructor": "Sana Ahmed",
+              "room": "FSM R-12"
+            },
+            "10:55-11:55": {
+              "subject": "Discrete Structures",
+              "instructor": "Arslan Ali",
+              "room": "R-14"
+            },
+            "12:00-13:00": {
+              "subject": "Communication Skills-Lab",
+              "instructor": "Hina Shahid",
+              "room": "CAL Lab",
+              "type": "Lab"
+            }
+          },
+          "Thursday": {
+            "08:45-09:45": {
+              "subject": "Computer Architecture",
+              "instructor": "Zubair Ahmed",
+              "room": "FSM R-14"
+            },
+            "09:50-10:50": {
+              "subject": "Communication Skills",
+              "instructor": "Hina Shahid",
+              "room": "FSM R-15"
+            },
+            "10:55-11:55": {
+              "subject": "Data Structures",
+              "instructor": "Sana Ahmed",
+              "room": "FSM R-12"
+            },
+            "12:00-13:30": {
+              "subject": "Data Structures-Lab",
+              "instructor": "Saima Khan",
+              "room": "Lab 6",
+              "type": "Lab"
+            }
+          },
+          "Friday": {
+            "09:50-10:50": {
+              "subject": "Discrete Structures",
+              "instructor": "Arslan Ali",
+              "room": "R-14"
+            },
+            "10:55-11:55": {
+              "subject": "Computer Architecture",
+              "instructor": "Zubair Ahmed",
+              "room": "FSM R-14"
+            },
+            "12:00-13:00": {
+              "subject": "Probability & Statistics",
+              "instructor": "Imran Malik",
+              "room": "R-13"
+            }
+          }
+        }
+      }
+    },
+    "4": {
+      "Sections": {
+        "4A": {
+          "Monday": {
+            "08:45-09:45": {
+              "subject": "Database Systems",
+              "instructor": "Naveed Anwar",
+              "room": "FSM R-1"
+            },
+            "09:50-10:50": {
+              "subject": "Operating Systems",
+              "instructor": "Kamran Malik",
+              "room": "R-3"
+            },
+            "10:55-11:55": {
+              "subject": "Software Engineering",
+              "instructor": "Farhan Ahmed",
+              "room": "FSM R-2"
+            },
+            "12:00-13:30": {
+              "subject": "Database Systems-Lab",
+              "instructor": "Asma Khan",
+              "room": "Lab 7",
+              "type": "Lab"
+            }
+          },
+          "Tuesday": {
+            "08:45-09:45": {
+              "subject": "Artificial Intelligence",
+              "instructor": "Ayesha Saleem",
+              "room": "R-4"
+            },
+            "09:50-10:50": {
+              "subject": "Computer Networks",
+              "instructor": "Hamza Ali",
+              "room": "FSM R-5"
+            },
+            "10:55-11:55": {
+              "subject": "Operating Systems",
+              "instructor": "Kamran Malik",
+              "room": "R-3"
+            },
+            "12:00-13:30": {
+              "subject": "Operating Systems-Lab",
+              "instructor": "Fahad Yasir",
+              "room": "Lab 8",
+              "type": "Lab"
+            }
+          },
+          "Wednesday": {
+            "08:45-09:45": {
+              "subject": "Database Systems",
+              "instructor": "Naveed Anwar",
+              "room": "FSM R-1"
+            },
+            "09:50-10:50": {
+              "subject": "Artificial Intelligence",
+              "instructor": "Ayesha Saleem",
+              "room": "R-4"
+            },
+            "12:00-13:30": {
+              "subject": "Artificial Intelligence-Lab",
+              "instructor": "Faryal Siddiqui",
+              "room": "Lab 1",
+              "type": "Lab"
+            }
+          },
+          "Thursday": {
+            "08:45-09:45": {
+              "subject": "Computer Networks",
+              "instructor": "Hamza Ali",
+              "room": "FSM R-5"
+            },
+            "09:50-10:50": {
+              "subject": "Software Engineering",
+              "instructor": "Farhan Ahmed",
+              "room": "FSM R-2"
+            },
+            "10:55-11:55": {
+              "subject": "Operating Systems",
+              "instructor": "Kamran Malik",
+              "room": "R-3"
+            },
+            "12:00-13:30": {
+              "subject": "Computer Networks-Lab",
+              "instructor": "Umar Farooq",
+              "room": "Networks Lab",
+              "type": "Lab"
+            }
+          },
+          "Friday": {
+            "08:45-09:45": {
+              "subject": "Database Systems",
+              "instructor": "Naveed Anwar",
+              "room": "FSM R-1"
+            },
+            "09:50-10:50": {
+              "subject": "Software Engineering",
+              "instructor": "Farhan Ahmed",
+              "room": "FSM R-2"
+            },
+            "10:55-11:55": {
+              "subject": "Artificial Intelligence",
+              "instructor": "Ayesha Saleem",
+              "room": "R-4"
+            },
+            "12:00-13:00": {
+              "subject": "Software Engineering-Lab",
+              "instructor": "Ali Hassan",
+              "room": "Lab 3",
+              "type": "Lab"
+            }
+          }
+        },
+        "4B": {
+          "Monday": {
+            "08:45-09:45": {
+              "subject": "Database Systems",
+              "instructor": "Tariq Mehmood",
+              "room": "FSM R-16"
+            },
+            "09:50-10:50": {
+              "subject": "Operating Systems",
+              "instructor": "Saad Ahmed",
+              "room": "R-17"
+            },
+            "10:55-11:55": {
+              "subject": "Software Engineering",
+              "instructor": "Nida Khan",
+              "room": "FSM R-18"
+            },
+            "12:00-13:30": {
+              "subject": "Database Systems-Lab",
+              "instructor": "Mariam Ali",
+              "room": "Lab 10",
+              "type": "Lab"
+            }
+          },
+          "Tuesday": {
+            "08:45-09:45": {
+              "subject": "Artificial Intelligence",
+              "instructor": "Zainab Malik",
+              "room": "R-15"
+            },
+            "09:50-10:50": {
+              "subject": "Computer Networks",
+              "instructor": "Adnan Qureshi",
+              "room": "FSM R-16"
+            },
+            "10:55-11:55": {
+              "subject": "Operating Systems",
+              "instructor": "Saad Ahmed",
+              "room": "R-17"
+            }
+          },
+          "Wednesday": {
+            "08:45-09:45": {
+              "subject": "Database Systems",
+              "instructor": "Tariq Mehmood",
+              "room": "FSM R-16"
+            },
+            "09:50-10:50": {
+              "subject": "Computer Networks",
+              "instructor": "Adnan Qureshi",
+              "room": "FSM R-16"
+            },
+            "12:00-13:30": {
+              "subject": "Operating Systems-Lab",
+              "instructor": "Yasir Hussain",
+              "room": "Lab 11",
+              "type": "Lab"
+            }
+          },
+          "Thursday": {
+            "08:45-09:45": {
+              "subject": "Computer Networks",
+              "instructor": "Adnan Qureshi",
+              "room": "FSM R-16"
+            },
+            "09:50-10:50": {
+              "subject": "Software Engineering",
+              "instructor": "Nida Khan",
+              "room": "FSM R-18"
+            },
+            "10:55-11:55": {
+              "subject": "Artificial Intelligence",
+              "instructor": "Zainab Malik",
+              "room": "R-15"
+            },
+            "12:00-13:30": {
+              "subject": "Artificial Intelligence-Lab",
+              "instructor": "Usman Khan",
+              "room": "Lab 12",
+              "type": "Lab"
+            }
+          },
+          "Friday": {
+            "08:45-09:45": {
+              "subject": "Software Engineering",
+              "instructor": "Nida Khan",
+              "room": "FSM R-18"
+            },
+            "09:50-10:50": {
+              "subject": "Database Systems",
+              "instructor": "Tariq Mehmood",
+              "room": "FSM R-16"
+            },
+            "12:00-13:30": {
+              "subject": "Computer Networks-Lab",
+              "instructor": "Saad Malik",
+              "room": "Networks Lab",
+              "type": "Lab"
+            },
+            "14:00-15:30": {
+              "subject": "Software Engineering-Lab",
+              "instructor": "Hassan Ali",
+              "room": "Lab 8",
+              "type": "Lab"
+            }
+          }
+        }
+      }
+    }
+  }
+}
