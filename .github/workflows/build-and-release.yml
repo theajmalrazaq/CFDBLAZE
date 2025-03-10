@@ -27,15 +27,6 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Build Project
-        run: npm run build
-
-      - name: Install Capacitor CLI
-        run: npm install -g @capacitor/cli
-
-      - name: Sync Capacitor with Android
-        run: npx cap sync android
-
       - name: Upload APK to GitHub Releases
         uses: softprops/action-gh-release@v2
         with:
