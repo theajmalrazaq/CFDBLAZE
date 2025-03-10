@@ -6,16 +6,17 @@ import { StatusBar } from '@capacitor/status-bar';
 function Onboarding() {
     const [page, setPage] = useState(0);
     const [student, setStudent] = useState('regular');
-    const [semester, setSemester] = useState(1);
+    const [semesterval, setSemesterval] = useState(1);
     const [Timetabledata, setTimetableData] = useState([]);
 
     useEffect(() => {
         const initialize = async () => {
             await StatusBar.setBackgroundColor({ color: '#000000' });
-            await StatusBar.setStyle({ style: 'dark' }); // Icons will be white
+            await StatusBar.setStyle({ style: 'dark' });
         };
         initialize();
     }, []);
+
 
     const changePage = () => {
         setPage(page + 1);
@@ -25,11 +26,10 @@ function Onboarding() {
         setStudent(e.target.value);
     };
 
-    const changeSemester = (value) => {
-        setSemester(value);
+    const changeSemester = (e) => {
+        setSemesterval(e.target.value);
     };
 
-    // You can also add a function to go back to previous pages
     const goBack = () => {
         if (page > 0) {
             setPage(page - 1);
@@ -144,22 +144,23 @@ function Onboarding() {
                         <p className="text-white playfair-display text-sm">
                             Which semester are you in?
                         </p>
-                        <div className="grid grid-cols-3 gap-3 text-white">
+                        <div className="grid grid-cols-2 gap-3 text-white">
                             {
                                 Timetabledata.semesters.map((semester, index) => (
                                     <label
                                         key={index}
                                         id={semester}
-                                        className={
-                                            "bg-gradient-to-r from-lime-400 to-lime-500 w-[120px] p-3 font-bold product-sans flex justify-center items-center rounded-xl hover:cursor-pointer hover:to-lime-600 ease-in duration-300 text-black"
+                                        className={semester == semesterval ?
+
+                                            "bg-lime-600 w-[60px] h-[60px] p-3 flex justify-center items-center rounded-xl hover:cursor-pointer" :
+                                            "bg-[#212121] w-[60px] h-[60px] p-3 font-bold product-sans flex justify-center items-center rounded-xl hover:cursor-pointer hover:to-lime-600 ease-in duration-300 text-black"
                                         }
                                     >
                                         <input
                                             type="radio"
                                             name="semester"
                                             value={semester}
-
-                                            onChange={() => changeSemester(semester)}
+                                            onClick={changeSemester}
                                             className="hidden"
                                         />
                                         {semester}
@@ -194,7 +195,7 @@ function Onboarding() {
                     </div>
                     <div className="flex flex-col gap-4 items-center h-[350px] min-h-[350px] min-w-[350px] overflow-y-auto">
                         <p className="text-white playfair-display text-sm">
-                            Select your Parent Section {semester}
+                            Select your Parent Section {semesterval}
                         </p>
                         {/* Sample course selection UI - you would populate this with actual courses */}
                         <div className="flex flex-col gap-2 w-full">
