@@ -1,6 +1,0 @@
-{
-  "appId": "com.cfdblaze.app",
-  "appName": "CFDBLAZE",
-  "webDir": "dist",
-  "bundledWebRuntime": false
-}
